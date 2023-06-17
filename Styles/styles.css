@@ -6,6 +6,9 @@
     --color-body: #aeabbc;
 }
 
+*, *::after, *::before {
+    box-sizing: border-box;
+}
 /* TIPOGRAFIA */
 
 html {
@@ -169,4 +172,60 @@ a {
     height: 65px;
     justify-content: center;
     width: 65px;
+}
+
+/* BUTTONS */
+
+.btn {
+    border-radius: 40px;
+    border: 0;
+    cursor:pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.btn--border {
+    background: white;
+    border: 2px solid var(--color-headings);
+    color: var(--color-headings);
+}
+
+.btn--border:hover {
+    background: var(--color-headings);
+    color: white;
+}
+
+.btn--secondary {
+    background: var(--color-secondary);
+    color: white;
+}
+
+.btn--secondary:hover {
+    background: #04cef2;
+}
+
+.btn--accent {
+    background: var(--color-accent);
+    color: white;
+}
+
+.btn--accent:hover {
+    background: #ee3303;
+}
+
+.btn--block {
+    display: inline-block;
+    width: 100%;
+}
+
+
+@media screen and (min-width:1024px) {
+    .btn {
+        font-size: 1.5rem;
+    }
 }
