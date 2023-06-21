@@ -1,0 +1,35 @@
+<div style="padding: 5rem">
+  <div class="card testimonial">
+    <div class="grid grid--1x2">
+      <div class="testimonial__image">
+        <img src="/Images/testimonial.jpg" alt="Happy client smilling" />
+        <span class="icon-container icon-container--acent">
+          <svg class="icon icon--small icon--accent">
+            <use xlink:href="images/sprite.svg#quotes"></use>
+          </svg>
+        </span>
+      </div>
+      <blockquote class="quote">
+        <p class="quote__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+          laboriosam et quaerat, excepturi aliquam obcaecati velit nulla
+          voluptatem ad nesciunt iusto neque veniam incidunt aliquid explicabo?
+          Fugit reprehenderit quis odio!
+        </p>
+        <footer>
+          <div class="media">
+            <div class="media__image quote__line">
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#line"></use>
+              </svg>
+            </div>
+            <div class="media__body quote__media">
+              <h3 class="media__title quote__author">John Smith</h3>
+              <p class="media__text quote__company">ABC Company</p>
+            </div>
+          </div>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</div>
