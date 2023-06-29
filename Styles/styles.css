@@ -328,6 +328,9 @@ a {
 }
 
 /* PLANS */
+.plan {
+    transition: transform .2s ease-out;
+}
 
 .plan__name {
     color: #fff;
@@ -359,6 +362,11 @@ a {
     letter-spacing: 1px;
     margin-bottom: 2rem;
 }
+
+.plan--popular {
+    transform: scale(1.1)
+}
+
 .plan--popular .card__header {
     position: relative;
 }
@@ -372,6 +380,13 @@ a {
     right: 5%;
 }
 
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan--popular:hover {
+    transform: scale(1.15);
+}
 
 
 @media screen and (min-width: 1024px) {
@@ -391,6 +406,12 @@ a {
         font-size: 1.7rem;
     }
 
+}
+
+@media screen and (max-width:767px) {
+    .plan--popular {
+        transform: scale(1);
+    }
 }
 
 /* MEDIA */
@@ -756,5 +777,23 @@ a {
 @media screen and (min-width:768px) {
     .block-domain__prices {
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+}
+
+/*PLAN BLOCK */
+
+.block-plan .grid {
+    gap: 8rem 4rem;
+}
+
+.block-plan .card {
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+@media screen and (min-width:768px) {
+    .block-plan .grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
