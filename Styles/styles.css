@@ -628,6 +628,7 @@ a {
 
 .block__header {
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .block__heading {
@@ -795,5 +796,43 @@ a {
 @media screen and (min-width:768px) {
     .block-plan .grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Feature Block */ 
+
+.feature:first-of-type {
+    margin-top:6rem;
+}
+
+
+.feature {
+    gap: 4rem 2rem;
+    margin: 12rem 0;
+}
+
+
+.feature__header__text {
+    font-size: 2rem;
+}
+.feature__media__heading {
+    margin: 1rem 0;
+}
+
+.feature__text {
+    margin-bottom: 2rem;
+}
+
+.feature__img {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+    .feature__heading {
+        font-size: 2.4rem;
+    }
+    .feature:nth-of-type(even) .feature__content{
+        order: 2;
     }
 }

@@ -15,69 +15,123 @@
     <link rel="stylesheet" href="Styles/styles.css" />
   </head>
   <body>
-    <section class="block container block-plan">
-      <div class="grid grid--1x3">
-        <div class="plan">
-          <div class="card card--secondary">
-            <header class="card__header">
-              <h3 class="plan__name">Entry</h3>
-              <span class="plan__price">$14</span>
-              <span class="plan__billing">/month</span>
-              <span class="badge badge--secondary bagde--small">10% OFF</span>
-              <span class="plan__description">Easy start on the cloud</span>
-            </header>
-            <div class="card__body">
-              <ul class="list list--tick">
-                <li class="list__item">Unlimited Websites</li>
-                <li class="list__item">Unlimited Bandwidth</li>
-                <li class="list__item">100 GB SSD Storage</li>
-                <li class="list__item">3 GB RAM</li>
-              </ul>
-              <button class="btn btn--border btn--block">Buy Now</button>
-            </div>
-          </div>
+    <section class="block container">
+      <header class="block__header">
+        <h2>Host on the Cloud to Keep Growing</h3>
+        <p class="feature__header__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+          animi!
+        </p>
+      </header>
+      <article class="feature grid grid--1x2">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="feature__media__heading">Super Easy to Use</h3>
+          <p class="feature__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            dolore debitis hic magnam eligendi aut est minima non suscipit
+            similique?
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <div class="plan plan--popular">
-          <div class="card card--primary">
-            <header class="card__header">
-              <h3 class="plan__name">Entry</h3>
-              <span class="plan__price">$14</span>
-              <span class="plan__billing">/month</span>
-              <span class="badge badge--primary bagde--small">10% OFF</span>
-              <span class="plan__description">Easy start on the cloud</span>
-            </header>
-            <div class="card__body">
-              <ul class="list list--tick">
-                <li class="list__item">Unlimited Websites</li>
-                <li class="list__item">Unlimited Bandwidth</li>
-                <li class="list__item">100 GB SSD Storage</li>
-                <li class="list__item">3 GB RAM</li>
-              </ul>
-              <button class="btn btn--border btn--block">Buy Now</button>
-            </div>
-          </div>
+        <picture>
+          <source
+            srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            srcset="images/easy.png 1x, images/easy@2x.png 2x"
+            type="image/png"
+          />
+          <img class="feature__img" src="Images/easy.png" alt="" />
+        </picture>
+      </article>
+      <article class="feature grid grid--1x2">
+
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#computer"></use>
+            </svg>
+          </span>
+          <h3 class="feature__media__heading">Simply Fast Websites</h3>
+          <p class="feature__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            dolore debitis hic magnam eligendi aut est minima non suscipit
+            similique?
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <div class="plan">
-          <div class="card card--secondary">
-            <header class="card__header">
-              <h3 class="plan__name">Entry</h3>
-              <span class="plan__price">$14</span>
-              <span class="plan__billing">/month</span>
-              <span class="badge badge--secondary bagde--small">10% OFF</span>
-              <span class="plan__description">Easy start on the cloud</span>
-            </header>
-            <div class="card__body">
-              <ul class="list list--tick">
-                <li class="list__item">Unlimited Websites</li>
-                <li class="list__item">Unlimited Bandwidth</li>
-                <li class="list__item">100 GB SSD Storage</li>
-                <li class="list__item">3 GB RAM</li>
-              </ul>
-              <button class="btn btn--border btn--block">Buy Now</button>
-            </div>
-          </div>
+        <picture>
+          <source
+            srcset="images/fast.webp 1x, images/fast@2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            srcset="images/fast.png 1x, images/fast@2x.png 2x"
+            type="image/png"
+          />
+          <img class="feature__img" src="Images/fast.png" alt="" />
+        </picture>
+      </article>
+      <article class="feature grid grid--1x2">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#wordpress"></use>
+            </svg>
+          </span>
+          <h3 class="feature__media__heading">Word Made Easy</h3>
+          <p class="feature__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            dolore debitis hic magnam eligendi aut est minima non suscipit
+            similique?
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
         </div>
-      </div>
+        <picture>
+          <source
+            srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            srcset="images/wordpress.png 1x, images/wordpress@2x.png 2x"
+            type="image/png"
+          />
+          <img class="feature__img" src="Images/wordpress.png" alt="" />
+        </picture>
+      </article>
+      <article class="feature grid grid--1x2">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#clock"></use>
+            </svg>
+          </span>
+          <h3 class="feature__media__heading">24/7 Expert Support</h3>
+          <p class="feature__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            dolore debitis hic magnam eligendi aut est minima non suscipit
+            similique?
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <picture>
+          <source
+            srcset="images/support.webp 1x, images/support@2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            srcset="images/support.png 1x, images/support@2x.png 2x"
+            type="image/png"
+          />
+          <img class="feature__img" src="Images/support.png" alt="" />
+        </picture>
+      </article>
     </section>
     <script src="js/main.js"></script>
   </body>
