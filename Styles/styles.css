@@ -13,7 +13,10 @@
     box-sizing: border-box;
 }
 /* TIPOGRAFIA */
-
+::selection {
+    background: var(--color-primary);
+    color: #fff;
+}
 html {
     font-size: 62.5%;
 }
@@ -42,6 +45,7 @@ h2 {
 
 h3 {
     font-size: 3rem;
+   
 }
 
 p {
@@ -63,6 +67,7 @@ p {
 
     h3 {
         font-size: 2.4rem;
+        
     }
 }
 
@@ -132,7 +137,7 @@ a {
 /* LISTS */
 
 .list {
-    color: var(--color-headings);
+    
     list-style: none;
     padding-left: 0;
 }
@@ -145,6 +150,7 @@ a {
 .list--tick {
     list-style-image: url(../Images/tick.svg);
     margin-left: 3rem;
+    color: var(--color-headings);
 }
 
 .list--tick .list__item {
@@ -418,6 +424,7 @@ a {
 
 .media {
     display: flex;
+    margin-bottom: 4rem;
 }
 
 .media__title {
@@ -635,26 +642,28 @@ a {
     margin-top: 0;
 }
 
-.block--dark {
+.block--dark, .block--dark p {
     background: #000;
     color: #7b858b;
 }
 
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
     color: #fff;
 }
 
 .block--skewed-right {
     background: #000;
     color: #7b858b;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
     padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
 .block--skewed-left {
     background: #000;
     color: #7b858b;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
     padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
@@ -729,10 +738,6 @@ a {
 }
 
 /* HERO */
-
-.hero {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
 
 .hero__tagline {
     font-size: 2rem;
@@ -836,3 +841,30 @@ a {
         order: 2;
     }
 }
+
+
+/* SHOWCASE */
+.block-showcase__img > img {
+    width: 100%;
+}
+
+.showcase__list .media__text {
+    font-size: 2rem;
+}
+
+@media screen and (min-width:768px) {
+    .block-showcase .grid {
+        grid-template-columns: 50% 50%;
+    }
+
+    .block-showcase__img {
+        justify-self: end;
+    }
+
+    .block-showcase__img > img {
+        width: auto;
+        max-width: 700px;
+    }
+
+}
+
