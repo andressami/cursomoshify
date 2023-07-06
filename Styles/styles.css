@@ -503,6 +503,9 @@ a {
 
 /* TESTIMONIAL */
 
+.testimonial__header__text {
+    font-size: 2rem;
+}
 .testimonial {
     padding: 3rem;
     
@@ -867,4 +870,5 @@ a {
     }
 
 }
+
 
