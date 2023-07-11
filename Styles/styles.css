@@ -214,7 +214,7 @@ a {
     font-weight: 600;
     margin: 1rem 0;
     outline: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -297,6 +297,7 @@ a {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 
 .input-group .btn {
@@ -347,11 +348,11 @@ a {
 }
 
 .plan__price {
-    font-size: 6rem;
+    font-size: 5rem;
 }
 
 .plan__billing {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 300;
     opacity: 0.8;
     margin-right: 1rem;
@@ -370,9 +371,6 @@ a {
     margin-bottom: 2rem;
 }
 
-.plan--popular {
-    transform: scale(1.1)
-}
 
 .plan--popular .card__header {
     position: relative;
@@ -413,19 +411,18 @@ a {
         font-size: 1.7rem;
     }
 
-}
-
-@media screen and (max-width:767px) {
     .plan--popular {
-        transform: scale(1);
+        transform: scale(1.1)
     }
 }
+
 
 /* MEDIA */
 
 .media {
     display: flex;
     margin-bottom: 4rem;
+    flex-wrap: nowrap;
 }
 
 .media__title {
@@ -445,7 +442,8 @@ a {
 .quote {
     font-size: 3rem;
     color: var(--color-body-darker);
-    font-style: italic;    
+    font-style: italic; 
+    line-height: 1.3;
 }
 
 .quote__text::before {
@@ -457,7 +455,7 @@ a {
 }
 
 .quote__author {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
     margin-bottom: 0;
     font-style: normal;
@@ -465,7 +463,7 @@ a {
 }
 
 .quote__company {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--color-headings);
     opacity: 0.4;
     font-style: normal;
@@ -498,9 +496,9 @@ a {
 @media screen and (min-width: 768px) {
     .grid--1x2 {
         grid-template-columns: repeat(2, 1fr);
-    }
-    
+    }  
 }
+
 
 /* TESTIMONIAL */
 
@@ -527,6 +525,10 @@ a {
     right: -32px;
 }
 
+.testimonial .quote {
+    font-size: 110%;
+    margin: 2rem 0;
+}
 @media screen and (min-width: 768px) {
     .testimonial .quote,
     .testimonial .quote__author {
@@ -778,8 +780,9 @@ a {
 }
 
 .block-domain__prices {
+    color: var(--color-headings);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
@@ -806,7 +809,7 @@ a {
 
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1024px) {
     .block-plan .grid {
         grid-template-columns: repeat(3, 1fr);
     }
