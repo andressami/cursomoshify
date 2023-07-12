@@ -33,7 +33,7 @@ body {
 h1, h2, h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
-    line-height: 1.1;
+   line-height: 1.1;
 }
 
 h1 {
@@ -561,10 +561,6 @@ a {
     color: #fff;
 }
 
-.callout--signup {
-    transform: translateY(5rem)
-}
-
 .callout__body {
     text-align: center;
 }
@@ -600,11 +596,6 @@ a {
     
 }
 
-@media screen and (min-width:1024px) {
-    .callout__paragraph {
-        font-size: 1.8rem;
-    }
-}
 
 /* COLLAPSIBLES */ 
 
@@ -770,15 +761,12 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    .hero {
+        padding-top: 0;
+    }
     .hero__content {
         text-align: left;
         align-self: center;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .hero {
-        padding-top: 0;
     }
 }
 
@@ -896,7 +884,7 @@ a {
 
 .footer {
     background: #232323;
-    padding-top: 10rem;
+    
 }
 
 .footer__section {
@@ -904,7 +892,7 @@ a {
     border-bottom: 1px solid #393939;
 }
 
-.footer .list {
+.footer_section .list {
     margin: 0;
 }
 .footer a {
